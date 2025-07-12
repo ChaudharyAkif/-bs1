@@ -41,7 +41,7 @@ const CreateTodo = ({ onTodoCreated }) => {
       formData.append("description", description)
       formData.append("image", image)
 
-      await axios.post("https://backend-ser-ga4m.vercel.app/api/todos", formData, {
+      await axios.post("https://backend1-sfd8.vercel.app/api/todos", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       })
 
