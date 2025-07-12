@@ -101,7 +101,7 @@ export const AuthProvider = ({ children }) => {
 
   const forgotPassword = async (email) => {
     try {
-      const response = await axios.post("http://backend1-sfd8.vercel.app/auth/forgot-password", { email })
+      const response = await axios.post("https://backend1-sfd8.vercel.app/auth/forgot-password", { email })
       return { success: true, message: response.data.message }
     } catch (error) {
       return {
@@ -113,7 +113,7 @@ export const AuthProvider = ({ children }) => {
 
   const resetPassword = async (token, newPassword) => {
     try {
-      const response = await axios.post("http://backend1-sfd8.vercel.app/auth/reset-password", {
+      const response = await axios.post("https://backend1-sfd8.vercel.app/auth/reset-password", {
         token,
         newPassword,
       })
